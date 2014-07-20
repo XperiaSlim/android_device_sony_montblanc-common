@@ -22,7 +22,7 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel information
 TARGET_KERNEL_SOURCE := kernel/sony/u8500
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-cortex_a9-linux-gnueabihf-linaro_4.9.1-2014.06
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-cortex_a9-linux-gnueabihf-linaro_4.9.1-2014.07
 
 BOARD_KERNEL_BASE := 0x40200000
 BOARD_RECOVERY_BASE := 0x40200000
