@@ -39,13 +39,20 @@ PRODUCT_COPY_FILES += \
     device/sony/montblanc-common/config/01stesetup:system/etc/init.d/01stesetup \
     device/sony/montblanc-common/config/10dhcpcd:system/etc/init.d/10dhcpcd \
     device/sony/montblanc-common/config/10hostapd:system/etc/init.d/10hostapd \
+    device/sony/montblanc-common/config/98netflix:system/etc/init.d/98netflix \
     device/sony/montblanc-common/config/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     device/sony/montblanc-common/config/p2p_supplicant.conf:system/etc/wifi/p2p_supplicant.conf
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
-    setup_fs
+    e2fsck \
+    libmake_f2fs \
+    mkfs.f2fs \
+    libfsck_f2fs \
+    fsck.f2fs \
+    libfibmap_f2fs \
+    fibmap.f2fs 
 
 # Hostapd
 PRODUCT_PACKAGES += \
