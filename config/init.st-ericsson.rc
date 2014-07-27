@@ -76,6 +76,7 @@ on fs
     setprop ro.crypto.state unsupported
 
     mount_all fstab.st-ericsson
+    swapon_all fstab.st-ericsson
 
     # SEMC: Start the TrimArea Daemon and early TA-users
     class_start trimarea
@@ -597,6 +598,11 @@ service suntrold /system/bin/suntrold
     user system
     group system
     oneshot
+
+# Sony Illumination Service
+service illumination /system/bin/illumination_service
+    class main
+    user root
 
 # Native helper for SuperStamina
 service xssm /system/bin/xssm
