@@ -94,6 +94,9 @@ PRODUCT_COPY_FILES += \
     device/sony/montblanc-common/recovery/usbid_init.sh:root/sbin/usbid_init.sh \
     device/sony/montblanc-common/recovery/postrecoveryboot.sh:root/sbin/postrecoveryboot.sh
 
+# fake script needed for recovery
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/config/modelid_cfg.sh:system/bin/modelid_cfg.sh
 
 # HW Configs
 PRODUCT_COPY_FILES += \
